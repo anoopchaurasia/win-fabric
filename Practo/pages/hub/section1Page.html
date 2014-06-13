@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="/pages/hub/section1Page.js"></script>
+</head>
+<body>
+    <div class="fragment section1page">
+        <section aria-label="Main content" role="main">
+            <div class="itemTemplate" data-win-control="WinJS.Binding.Template">
+                <div class="templatecontainer">
+                    <div class="itemcontainer">
+                        <div class="itemtitle label-extralarge" data-win-bind="textContent: title"></div>
+                        <div class="label-mediummid" data-win-res="{ textContent: 'Section3Description' }" style="height: 82px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input id="speciality" style="width:90%; height: 40px; font-size:20px" />
+            </div>
+            <div class="itemslist win-selectionstylefilled" data-win-control="WinJS.UI.ListView" data-win-options="{
+                        selectionMode: 'none',
+                        itemTemplate: select('.itemTemplate')
+                    }">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
