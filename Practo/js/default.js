@@ -14,7 +14,7 @@
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
                 // TODO: This application has been newly launched. Initialize
                 WinJS.xhr({
-                    url: "https://www.practo.com/health/api/devicesubscriptions",
+                    url: "devicesubscriptions",
                     type: "POST",
                     data:$.param({
                         push_token: '',

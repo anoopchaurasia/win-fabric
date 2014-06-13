@@ -22,7 +22,7 @@
 
     function seach(key) {
         $.ajax({
-            url: "https://www.practo.com/health/api/metrics",
+            url: "metrics",
             data: { city_id: 0 },
             success: function (data) { debugger },
             error: function (data) { debugger },
